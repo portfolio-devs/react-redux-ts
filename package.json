@@ -2,6 +2,18 @@
   "name": "react-redux-ts",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/portfolio-devs/react-redux-ts#readme",
+  "bugs": {
+    "url": "https://github.com/portfolio-devs/react-redux-ts/issues"
+  },
+  "license": "ISC",
+  "author": "",
+  "browser": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/portfolio-devs/react-redux-ts.git"
+  },
   "scripts": {
     "start": "",
     "build": "",
@@ -10,22 +22,12 @@
     "magic": "webpack",
     "dev": "webpack-dev-server --mode=development"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/portfolio-devs/react-redux-ts.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/portfolio-devs/react-redux-ts/issues"
-  },
-  "homepage": "https://github.com/portfolio-devs/react-redux-ts#readme",
+  "config": {},
   "dependencies": {
-    "esbuild": "^0.13.8",
     "graphql": "^15.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
     "redux": "^4.1.1",
     "web-vitals": "^1.0.1"
@@ -39,9 +41,11 @@
     "@types/node": "^16.11.4",
     "@types/react": "^17.0.31",
     "@types/react-dom": "^17.0.10",
+    "@types/react-redux": "^7.1.20",
     "@types/react-router-dom": "^5.3.1",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.4.0",
+    "esbuild": "^0.13.8",
     "html-webpack-plugin": "^5.4.0",
     "jest": "^27.3.1",
     "node-sass": "^6.0.1",
