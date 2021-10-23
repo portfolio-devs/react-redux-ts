@@ -14,7 +14,7 @@ module.exports = {
         options: { presets: ["@babel/env"] },
       },
       {
-        test: /\.s(a|c)ss$/,
+        test: /\.s[ac]ss$/,
         use: [
           "style-loader",
           {
