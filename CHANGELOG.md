@@ -35,6 +35,11 @@ straightforward as possible.
   PATCH Ticket title goes here.
 
 
+## [0.0.1] - 2021-10-25
+### Added
+ - [REACT-REDUX-TS]
+   MINOR Added the store, actioncreators, reducers for Redux and the Counter component
+
 ## [0.0.1] - 2021-10-23
   
 Here we would have the update steps for 0.0.1 for people to follow.

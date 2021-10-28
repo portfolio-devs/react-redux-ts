@@ -1,9 +1,15 @@
-const path = require("path");
-const webpack = require("webpack");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path")
+const webpack = require("webpack")
+const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   entry: "./src/index.tsx",
+  output: {
+    path: path.resolve(__dirname, "dist/"),
+    publicPath: "/dist/",
+    filename: "bundle.js",
+  },
+  devtool: 'source-map',
   mode: "development",
   module: {
     rules: [
@@ -32,25 +38,15 @@ module.exports = {
     ],
   },
   resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
-  output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
-    filename: "bundle.js",
-  },
-  // devServer: {
-  //   contentBase: path.join(__dirname, "public/"),
-  //   port: 3000,
-  //   publicPath: "http://localhost:3000/dist/",
-  //   hotOnly: true
-  // },
+
   devServer: {
     historyApiFallback: true,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, "public/index.html"),
+      template: path.resolve(__dirname, "dist/index.html"),
       filename: "index.html",
     }),
   ],
-};
+}
