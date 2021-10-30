@@ -1,19 +1,22 @@
 import { Route, Switch } from 'react-router-dom';
-import Counter from './pages/Counter';
+import Chat from './pages/Chat';
 import Home from './pages/Home'
+import Tracking from './pages/Tracking';
 
 
-export default function Routes() {
+export const Routes = () => {
 
 	return (
-
 		<>
 
+			{
+
+			}
 			<Switch>
-				<Route path="/counter"><Counter /></Route>
+				<Route path="/tracking"><Tracking /></Route>
+				<Route path="/chat"><Chat /></Route>
 				<Route path="/" ><Home /></Route>
 			</Switch>
-
 		</>
 	);
 }

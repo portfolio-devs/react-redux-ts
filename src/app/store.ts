@@ -1,6 +1,8 @@
-import { compose, createStore } from 'redux'
-import { rootReducer } from './reducers/reducers';
+import { configureStore } from '@reduxjs/toolkit'
 
-// const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export default createStore(rootReducer)
+export default configureStore({
+  reducer: {
+
+  }
+})

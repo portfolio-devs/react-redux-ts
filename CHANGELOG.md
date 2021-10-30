@@ -40,10 +40,8 @@ straightforward as possible.
  - [REACT-REDUX-TS]
    MINOR Added the store, actioncreators, reducers for Redux and the Counter component
 
+
 ## [0.0.1] - 2021-10-23
-  
-Here we would have the update steps for 0.0.1 for people to follow.
- 
 ### Added
  - [REACT-REDUX-TS]
    MINOR Added react-redux lib and CHANGELOG.md file

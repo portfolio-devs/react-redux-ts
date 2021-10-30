@@ -1,10 +1,17 @@
-
-import Routes from './Routes'
 import './App.scss'
+import Login from './pages/Login';
+import DynamicHome from './pages/DynamicHome';
 
-function App() {
+const App = () => {
+  const logged = JSON.parse(sessionStorage.logged)
   return (
-    <Routes />
+    <>
+      {
+        logged
+          ? <DynamicHome user={logged} />
+          : <Login />
+      }
+    </>
   );
 }
 
